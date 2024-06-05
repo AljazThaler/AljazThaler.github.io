@@ -1,0 +1,324 @@
+/* Osnovne spremenljivke za barve in pisave */
+:root {
+  --bs-main: #112D4E;
+  --bs-title: blue;
+  --bs-background: #F9F7F7;
+  --bs-secondary-hover: lightblue;
+  --bs-secondary: white;
+  --bs-font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Osnovni stil telesa in pisav */
+body {  
+  font-family: var(--bs-font-family);
+  background-color: var(--bs-background);
+}
+
+h1 { 
+  color: var(--bs-main); 
+  font-size: 2em; 
+}
+
+h2 { 
+  color: var(--bs-title); 
+  font-size: 1.5em; 
+  font-weight: bold; 
+}
+
+h3 { 
+  color: var(--bs-title); 
+  font-size: 1.5em; 
+}
+
+p { 
+  font-size: 1.15em; 
+}
+
+.predstavljeno .col-lg-4 {
+  text-align: center;
+}
+
+.navbar-custom .navbar-brand {
+  float: left;
+}
+
+.navbar-custom {
+  background-color: var(--bs-main);
+}
+
+.nav-item .nav-link {
+  opacity: .4;
+  color: var(--bs-secondary);
+}
+
+.active .nav-link {
+  opacity: 1;
+}
+
+.card {
+  border: 3px solid #333333;
+}
+
+.navbar-custom .nav-link:hover {
+  color: var(--bs-secondary-hover);
+}
+
+.carousel img {
+  margin: auto;
+}
+
+.item img {
+  width: 75%;
+}
+
+.rounded div {
+  border-radius: 5px;
+}
+
+.zvezdica {
+  color: red;
+}
+
+select.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--bs-main);
+  border-radius: 5px;
+  background-color: var(--bs-background);
+  color: var(--bs-main);
+  font-family: var(--bs-font-family);
+}
+
+select.form-control option {
+  background-color: var(--bs-background);
+  color: var(--bs-main);
+}
+
+.nav-item ul {
+  display: none;
+  position: absolute;
+  background-color: var(--bs-background);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--bs-main);
+}
+
+.nav-item:hover ul {
+  display: block;
+}
+
+.nav-item ul li {
+  padding: 1px;
+}
+
+.nav-item ul li a {
+  color: var(--bs-main);
+}
+
+.nav-item ul li a:hover {
+  color: var(--bs-secondary-hover);
+}
+
+/* Tabela */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 10px 2px 3px rgba(0, 0, 0, 0.1);
+  background-color: var(--bs-secondary);
+}
+
+.custom-table thead {
+  background-color: var(--bs-main);
+  color: var(--bs-secondary);
+}
+
+.custom-table thead th {
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+  border: 1px solid #dddddd;
+}
+
+.custom-table  tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.custom-table  tbody tr:hover {
+  background-color: var(--bs-secondary-hover);
+}
+
+.custom-table  tbody tr {
+  display: table-row;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-table  tbody td {
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #dddddd;
+}
+
+/* Twitter button */
+.buttontw {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(40, 144, 241);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(40, 144, 241);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+}
+
+.buttontw span {
+  margin: 10px;
+}
+
+.buttontw::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.buttontw:hover {
+  color: #fff;
+  border: 1px solid rgb(40, 144, 241);
+}
+
+.buttontw:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(40, 144, 241);
+}
+
+/* Instagram button */
+.buttonig {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(255,0,0);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(255,0,0);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+}
+
+.buttonig span {
+  margin: 10px;
+}
+
+.buttonig::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.buttonig:hover {
+  color: #fff;
+  border: 1px solid rgb(255,0,0);
+}
+
+.buttonig:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+}
+
+/* Facebook button */
+.buttonfc {
+  background: transparent;
+  position: relative;
+  padding: 5px 11px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #0163E0;
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: #0163E0;
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+}
+
+.buttonfc svg {
+  fill: #0163E0;
+  height: 25px;
+  width: 25px;
+}
+
+.buttonfc span {
+  margin: 10px;
+}
+
+.buttonfc::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 10px;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.buttonfc:hover {
+  color: #fff;
+  border: 1px solid #0163E0;
+}
+
+.buttonfc:hover svg {
+  fill: currentColor;
+}
+
+.buttonfc:hover::before {
+  box-shadow: inset 0 0 0 10em #0163E0;
+}
